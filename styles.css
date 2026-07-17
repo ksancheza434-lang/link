@@ -1,0 +1,47 @@
+/* =========================================
+   Reseteo básico para evitar márgenes por defecto
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Estilos del cuerpo de la página (body)
+   ========================================= */
+body {
+    background-color: #f0f2f5; /* Un fondo gris claro muy sutil */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Usamos Flexbox para centrar el contenido perfectamente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    min-height: 100vh;       /* Ocupa todo el alto de la pantalla */
+    padding: 20px;
+}
+
+/* =========================================
+   Estilos del iFrame
+   ========================================= */
+iframe {
+    /* Le damos un diseño tipo "tarjeta" moderna */
+    background-color: #ffffff;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
+    /* Aseguramos que sea responsivo */
+    width: 100%;
+    max-width: 600px; /* Puedes ajustar este valor si lo quieres más ancho */
+    height: 450px;    
+    
+    /* Transición suave por si cambia de tamaño */
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por encima del iframe (Opcional) */
+iframe:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Se eleva un poquito */
+}
